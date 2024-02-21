@@ -30,14 +30,14 @@ const Home = ({setSelectedPage}: Props) => {
           <h1 className='py-2 text-gray-800 text-center'>A Full Stack <br/>Web Developer</h1>
           <p className='py-4 px-2 text-gray-700 text-center sm:max-w-[70%] m-auto'>
             I’m focused on building responsive full-stack web applications
-            integrating modern technologies.
+            using modern technologies.
           </p>
           <div className='p-4 flex gap-8 items-center justify-center'>
             <button className='w-40 h-10'>Download CV</button>
           </div>
           <div className='flex items-center justify-center gap-10 max-w-[330px] m-auto py-4'>
             <a
-              href='https://www.linkedin.com/in/clint-briley-50056920a/'
+              href='https://www.linkedin.com/in/aliferuz'
               target='_blank'
               rel='noreferrer'
             >
@@ -46,7 +46,7 @@ const Home = ({setSelectedPage}: Props) => {
               </div>
             </a>
             <a
-              href='https://github.com/fireclint'
+              href='https://github.com/aliferuz'
               target='_blank'
               rel='noreferrer'
             >

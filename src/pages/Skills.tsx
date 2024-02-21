@@ -36,7 +36,7 @@ const Skills = ({ setSelectedPage } : Props) => {
           Skills
         </p>
         <h2 className='py-4'>What I Can Do</h2>
-        <div className='p-4 rounded-xl shadow drop-shadow-xl border border-lime-400 text-center my-6 flex flex-col items-center justify-center w-full'>
+        <div className='p-4 rounded-xl shadow drop-shadow-xl border border-greenblue-500 text-center my-6 flex flex-col items-center justify-center w-full'>
             <p className='text-lime-500 font-semibold'>I studied at Code Academy Berlin | Berlin <br /> September 2023 - February 2024</p>
             <p className='text-sm text-gray-700 mt-2'>Web Development Bootcamp (full-time on-site) | Front-end + Back-end</p>
             <p className='text-sm text-gray-700 mt-1'>Completed an 840-hour intensive course focusing on practical, project-based work

@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Skills from './pages/Skills';
 import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 
 const App = () => {
@@ -31,6 +33,8 @@ const App = () => {
     <About setSelectedPage={setSelectedPage}/>
     <Skills setSelectedPage={setSelectedPage}/>
     <Projects setSelectedPage={setSelectedPage}/>
+    <Contact setSelectedPage={setSelectedPage}/>
+    <Footer/>
     </main>
   );
 };

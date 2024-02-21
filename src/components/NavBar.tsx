@@ -73,7 +73,7 @@ const NavBar = ({ selectedPage, setSelectedPage}: Props) => {
             </Link>
           </div>
           <div onClick={handleNav} className='md:hidden'>
-            <AiOutlineMenu size={25} color='#A3E636'/>
+            <AiOutlineMenu size={25} color='#00d1e5'/>
           </div>
         </div>
       </div>
@@ -115,12 +115,6 @@ const NavBar = ({ selectedPage, setSelectedPage}: Props) => {
             setSelectedPage={setSelectedPage}>
             <h4 onClick={() => setNav(false)} 
             className='py-4 font-semibold uppercase'>Projects</h4>
-            </Link>
-            <Link page= "Resume" 
-            selectedPage={selectedPage}
-            setSelectedPage={setSelectedPage}>
-            <h4 onClick={() => setNav(false)} 
-            className='py-4 font-semibold uppercase'>Resume</h4>
             </Link>
             <Link page= "Contact" 
             selectedPage={selectedPage}
