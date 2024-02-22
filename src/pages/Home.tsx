@@ -18,6 +18,25 @@ const Home = ({setSelectedPage}: Props) => {
         }
       }, [inView, setSelectedPage]);
 
+      function downloadFile() {
+        const url = '../assets/updatedCV.pdf';
+        fetch(url)
+          .then(response => response.blob())
+          .then(blob => {
+            const url = window.URL.createObjectURL(new Blob([blob]));
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute('download', 'updatedCV.pdf');
+            document.body.appendChild(link);
+            link.click();
+            if (link.parentNode) {
+              link.parentNode.removeChild(link);
+            }
+          })
+          .catch(error => console.error('Error downloading file:', error));
+      }
+      
+
   return (
     <div id='home' className='w-full min-h-screen flex items-center justify-center md:mt-12 pt-12' ref={refInView}>
       <div className='pt-10 flex flex-col justify-center items-center'>
@@ -33,7 +52,7 @@ const Home = ({setSelectedPage}: Props) => {
             using modern technologies.
           </p>
           <div className='p-4 flex gap-8 items-center justify-center'>
-            <button className='w-40 h-10'>Download CV</button>
+            <button className='w-40 h-10' onClick={downloadFile}>Download CV</button>
           </div>
           <div className='flex items-center justify-center gap-10 max-w-[330px] m-auto py-4'>
             <a
