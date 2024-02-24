@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { SelectedPage } from '../types';
+import CV from '../assets/updatedCV.pdf'
 
 
 type Props = {
@@ -18,23 +19,23 @@ const Home = ({setSelectedPage}: Props) => {
         }
       }, [inView, setSelectedPage]);
 
-      function downloadFile() {
-        const url = '../assets/updatedCV.pdf';
-        fetch(url)
-          .then(response => response.blob())
-          .then(blob => {
-            const url = window.URL.createObjectURL(new Blob([blob]));
-            const link = document.createElement('a');
-            link.href = url;
-            link.setAttribute('download', 'updatedCV.pdf');
-            document.body.appendChild(link);
-            link.click();
-            if (link.parentNode) {
-              link.parentNode.removeChild(link);
-            }
-          })
-          .catch(error => console.error('Error downloading file:', error));
-      }
+      // function downloadFile() {
+      //   const url = '../assets/updatedCV.pdf';
+      //   fetch(url)
+      //     .then(response => response.blob())
+      //     .then(blob => {
+      //       const url = window.URL.createObjectURL(new Blob([blob]));
+      //       const link = document.createElement('a');
+      //       link.href = url;
+      //       link.setAttribute('download', 'updatedCV.pdf');
+      //       document.body.appendChild(link);
+      //       link.click();
+      //       if (link.parentNode) {
+      //         link.parentNode.removeChild(link);
+      //       }
+      //     })
+      //     .catch(error => console.error('Error downloading file:', error));
+      // }
       
 
   return (
@@ -52,7 +53,9 @@ const Home = ({setSelectedPage}: Props) => {
             using modern technologies.
           </p>
           <div className='p-4 flex gap-8 items-center justify-center'>
-            <button className='w-40 h-10' onClick={downloadFile}>Download CV</button>
+            <a href={CV} target='_blank' type='application/octet-stream' 
+            download={'myCV.pdf'}
+            className='w-40 text-center btn h-7'>Download CV</a>
           </div>
           <div className='flex items-center justify-center gap-10 max-w-[330px] m-auto py-4'>
             <a
@@ -60,7 +63,8 @@ const Home = ({setSelectedPage}: Props) => {
               target='_blank'
               rel='noreferrer'
             >
-              <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300'>
+              <div className='rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer 
+              hover:scale-110 ease-in duration-300'>
                 <FaLinkedinIn size={20}/>
               </div>
             </a>

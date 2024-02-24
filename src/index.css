@@ -35,6 +35,10 @@
     @apply shadow-xl shadow-gray-400 rounded-xl font-semibold text-sm mx-2 uppercase text-lime-500
   }
 
+  .btn {
+    @apply shadow-xl shadow-gray-400 rounded-xl font-semibold text-sm mx-2 uppercase text-lime-500
+  }
+
   .input{
     @apply mb-5 shadow-xl shadow-gray-400 border-2 border-greenblue-400 w-full rounded-lg bg-gradient-to-l from-greenblue-200 px-5 py-3 placeholder:text-stone-900;
 }
