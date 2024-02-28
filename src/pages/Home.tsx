@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { useInView } from 'react-intersection-observer';
 import { SelectedPage } from '../types';
-import CV from '../assets/updatedCV.pdf'
+import CV from '../assets/updatedCV.29.02.pdf'
 
 
 type Props = {
@@ -19,24 +19,6 @@ const Home = ({setSelectedPage}: Props) => {
         }
       }, [inView, setSelectedPage]);
 
-      // function downloadFile() {
-      //   const url = '../assets/updatedCV.pdf';
-      //   fetch(url)
-      //     .then(response => response.blob())
-      //     .then(blob => {
-      //       const url = window.URL.createObjectURL(new Blob([blob]));
-      //       const link = document.createElement('a');
-      //       link.href = url;
-      //       link.setAttribute('download', 'updatedCV.pdf');
-      //       document.body.appendChild(link);
-      //       link.click();
-      //       if (link.parentNode) {
-      //         link.parentNode.removeChild(link);
-      //       }
-      //     })
-      //     .catch(error => console.error('Error downloading file:', error));
-      // }
-      
 
   return (
     <div id='home' className='w-full min-h-screen flex items-center justify-center md:mt-12 pt-12' ref={refInView}>
