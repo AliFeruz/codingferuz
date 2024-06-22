@@ -14,9 +14,14 @@
     scroll-behavior: smooth;
     font-family: 'Raleway', sans-serif;
   }
+  
+  .home {
+    background: rgb(4,67,17);
+    background: radial-gradient(circle, rgb(0, 20, 4) 0%, rgb(3, 89, 23) 50%, rgb(0, 5, 1) 100%);
+  }
 
   body {
-    @apply bg-greenblue-50 text-[#1f2937] tracking-wide
+    @apply tracking-wide text-gray-400
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -32,14 +37,15 @@
   }
   
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl font-semibold text-sm mx-2 uppercase text-lime-500
+    @apply border-2 border-gray-400 rounded-xl font-semibold text-sm mx-2 uppercase text-lime-500
   }
 
   .btn {
-    @apply shadow-xl shadow-gray-400 rounded-xl font-semibold text-sm mx-2 uppercase text-lime-500
+    @apply border-2 border-gray-400 rounded-xl font-semibold tracking-wider text-sm mx-2 uppercase text-lime-500
   }
 
   .input{
-    @apply mb-5 shadow-xl shadow-gray-400 border-2 border-greenblue-400 w-full rounded-lg bg-gradient-to-l from-greenblue-200 px-5 py-3 placeholder:text-stone-900;
+    @apply mb-5  border-2 border-gray-600 w-full rounded-lg 
+    bg-gradient-to-l from-lime-400/[.9] via-lime-100 to-lime-50 px-5 py-3 placeholder:text-stone-900;
 }
 }
