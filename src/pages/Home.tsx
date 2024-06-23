@@ -24,9 +24,9 @@ const Home = ({setSelectedPage}: Props) => {
     <div id='home' className='w-full contrast-200
     bg-gradient-to-tl from-lime-950 from-20% via-lime-900 via-50% to-lime-950 to-80% min-h-screen
     flex items-center justify-center pt-14' ref={refInView}>
-      <div className='absolute h-full w-5/6 flex items-center justify-center 
+      <div className='absolute h-full w-5/6 hidden md:flex items-center justify-center 
       border-r-2 border-l-2 border-gray-600'/>
-      <div className='absolute h-5/6 w-full flex items-center justify-center 
+      <div className='absolute h-5/6 w-full hidden md:flex items-center justify-center 
       border-t-2 border-2 border-gray-600'/>
       <div className='pt-10 flex flex-col justify-center items-center'>
           <p className='uppercase text-sm tracking-widest text-gray-300'>

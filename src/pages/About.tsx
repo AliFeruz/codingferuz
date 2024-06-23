@@ -20,11 +20,11 @@ const About = ({ setSelectedPage } : Props) => {
   return (
     <div id='about' ref={refInView} className='w-full min-h-screen flex items-center justify-center contrast-200
     bg-gradient-to-tr from-lime-950 from-20% via-lime-900 via-50% to-lime-950 to-80%'>
-      <div className='absolute h-full w-5/6 flex items-center justify-center 
+      <div className='absolute h-full w-5/6 hidden md:flex items-center justify-center 
       border-r-2 border-l-2 border-gray-600'/>
-      <div className='absolute h-5/6 w-full flex items-center justify-center 
+      <div className='absolute h-5/6 w-full hidden md:flex items-center justify-center 
       border-t-2 border-b-2 border-gray-600'/>
-      <div className='flex w-5/6 px-10'>
+      <div className='sm:flex md:flex md:w-5/6 px-10'>
         <div className='flex flex-col md:w-1/2'>
           <p className='uppercase text-xl px-4 tracking-widest text-lime-500'>
             About
@@ -57,7 +57,7 @@ const About = ({ setSelectedPage } : Props) => {
             </p>
           </a>
         </div>
-        <div className='md:w-1/2 h-auto m-auto p-10 flex items-center justify-center'>
+        <div className='md:w-1/2 h-auto p-4 md:p-10 flex items-center justify-center'>
           <img src={ProfilPic} alt="/"
           className='hover:scale-105 w-full h-full object-cover ease-in 
           duration-300 shadow-md shadow-gray-500 rounded-xl contrast-75'/>

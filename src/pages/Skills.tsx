@@ -32,11 +32,11 @@ const Skills = ({ setSelectedPage } : Props) => {
   return (
     <div id='skills' ref={refInView} className='w-full min-h-screen flex items-center justify-center
     contrast-200 bg-gradient-to-tl from-lime-950 from-20% via-lime-900 via-50% to-lime-950 to-80%'>
-      <div className='absolute h-full w-5/6 flex items-center justify-center 
+      <div className='absolute h-full w-5/6 hidden md:flex items-center justify-center 
       border-r-2 border-l-2 border-gray-600'/>
-      <div className='absolute h-5/6 w-full flex items-center justify-center 
+      <div className='absolute h-5/6 w-full hidden md:flex items-center justify-center 
       border-t-2 border-b-2 border-gray-600'/>
-      <div className='w-5/6 flex flex-col justify-center mt-14 px-10 h-full'>
+      <div className='md:w-5/6 flex flex-col justify-center mt-14 px-10 h-full'>
         <p className='text-xl tracking-widest px-4 uppercase text-lime-500'>
          Tech Skills
         </p>
@@ -57,8 +57,8 @@ const Skills = ({ setSelectedPage } : Props) => {
                 <img src={Html} width='28' height='28' alt='/' />
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
-                <h4>HTML</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <p>HTML</p>
+                <p className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</p>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>CSS</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</h4>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>JavaScript</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</h4>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>TypeScript</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</h4>
               </div>
             </div>
           </div>
@@ -102,7 +102,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>React</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</h4>
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>Next</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</h4>
               </div>
             </div>
           </div>
@@ -124,7 +124,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>Tailwind</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</h4>
               </div>
             </div>
           </div>
@@ -135,7 +135,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>NodeJS</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</h4>
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>MongoDB</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Advanced</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Advanced</h4>
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>Firebase</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Basic</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Basic</h4>
               </div>
             </div>
           </div>
@@ -168,7 +168,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>GraphQL</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Basic</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Basic</h4>
               </div>
             </div>
           </div>
@@ -179,7 +179,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>Git</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Basic</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Basic</h4>
               </div>
             </div>
           </div>
@@ -190,7 +190,7 @@ const Skills = ({ setSelectedPage } : Props) => {
               </div>
               <div className='flex flex-col items-center justify-center md:mr-5'>
                 <h4>Github</h4>
-                <h4 className='text-gray-500 uppercase text-sm'>Basic</h4>
+                <h4 className='text-gray-500 uppercase md:text-sm text-xs'>Basic</h4>
               </div>
             </div>
           </div>

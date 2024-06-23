@@ -21,11 +21,11 @@ const Projects = ({ setSelectedPage } : Props) => {
   return (
     <div id='projects' ref={refInView} className='w-full min-h-screen contrast-200 flex items-center justify-center
     bg-gradient-to-tr from-lime-950 from-20% via-lime-900 via-50% to-lime-950 to-80%'>
-      <div className='absolute h-full w-5/6 flex items-center justify-center 
+      <div className='absolute h-full w-5/6 hidden md:flex items-center justify-center 
       border-r-2 border-l-2 border-gray-600'/>
-      <div className='absolute h-5/6 w-full flex items-center justify-center 
+      <div className='absolute h-5/6 w-full hidden md:flex items-center justify-center 
       border-t-2 border-b-2 border-gray-600'/>
-      <div className='flex flex-col justify-center w-5/6 px-10 h-full my-14'>
+      <div className='flex flex-col justify-center md:w-5/6 px-10 h-full my-14'>
         <p className='uppercase text-xl px-4 tracking-widest text-lime-500'>
         Projects
         </p>
