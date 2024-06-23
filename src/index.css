@@ -46,6 +46,6 @@
 
   .input{
     @apply mb-5  border-2 border-gray-600 w-full rounded-lg 
-    bg-gradient-to-l from-lime-800/[.9] via-lime-700 to-lime-600 px-5 py-3 placeholder:text-stone-500;
+    bg-gradient-to-l from-lime-900/[.9] via-lime-800 to-lime-700 px-5 py-3 placeholder:text-gray-400;
 }
 }
