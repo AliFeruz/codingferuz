@@ -27,7 +27,7 @@ const Home = ({setSelectedPage}: Props) => {
       <div className='absolute h-full w-5/6 hidden md:flex items-center justify-center 
       border-r-2 border-l-2 border-gray-600'/>
       <div className='absolute h-5/6 w-full hidden md:flex items-center justify-center 
-      border-t-2 border-2 border-gray-600'/>
+      border-t-2 border-b-2 border-gray-600'/>
       <div className='pt-10 flex flex-col justify-center items-center'>
           <p className='uppercase text-sm tracking-widest text-gray-300'>
             LET&#39;S BUILD SOMETHING TOGETHER

@@ -60,7 +60,7 @@ const About = ({ setSelectedPage } : Props) => {
         <div className='md:w-1/2 h-auto p-4 md:p-10 flex items-center justify-center'>
           <img src={ProfilPic} alt="/"
           className='hover:scale-105 w-full h-full object-cover ease-in 
-          duration-300 shadow-md shadow-gray-500 rounded-xl contrast-75'/>
+          duration-300 shadow-md shadow-gray-500 rounded-xl contrast-[.56]'/>
         </div>
       </div>
     </div>

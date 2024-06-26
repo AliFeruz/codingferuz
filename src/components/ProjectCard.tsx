@@ -12,7 +12,7 @@ const ProjectCard = ({project}: Props) => {
     hover:bg-gradient-to-t from-greenblue-300 to-lime-600'>
     <div className="h-[500px] relative w-full">
     <img src={project.image} alt="project image" 
-    className='rounded-t-xl w-full h-full object-cover group-hover:opacity-10' />
+    className='rounded-t-xl w-full h-full object-cover group-hover:opacity-10 contrast-50' />
     <div className='hidden group-hover:block absolute top-[50%] 
     left-[50%] translate-x-[-50%] translate-y-[-50%]'>
     <div>
